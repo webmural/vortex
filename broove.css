@@ -1,0 +1,94 @@
+html {
+  font: max(3ch, 5vmax + 3vmin) sans-serif;
+}
+
+body {
+  display: flex;
+  flex-flow: anywhere;
+  box-sizing: border-box;
+  overflow-wrap: anywhere;
+  margin: 0;
+  min-height: 100vh;
+  border: 1ch groove deepskyblue;
+}
+
+body > * {
+  box-sizing: border-box;
+  padding: 1ch 1ch 1em;
+}
+
+h1 {
+  font-weight: unset;
+  justify-content: center;
+  animation: 60s ease-in-out swoon infinite;
+  border: 1ch groove hotpink;
+  display: table;
+  margin: auto;
+  margin-bottom: 1rem;
+}
+
+p {
+  margin: auto;
+}
+
+a {
+  display: inline-flex;
+  padding: 1vmin;
+}
+
+b {
+  text-shadow:
+    0 -3vh 0,
+    0 -2vh 0,
+    0 -1vh 0;
+}
+
+body {
+  display: flex;
+  flex-flow: column;
+  margin: auto;
+}
+
+main {
+  align-items: center;
+  display: flex;
+  flex-flow: row;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+:root {
+  background: #ee1;
+  color: indigo;
+  background-image: linear-gradient(.3turn, gainsboro 0% , gainsboro 50%, #ee1 50%);
+  line-height: 1.618;
+}
+
+:any-link {
+  background: #bae;
+  color: indigo;
+}
+
+::selection {
+  background: deepskyblue;
+  color: indigo;
+}
+
+@keyframes swoon {
+  from {
+    text-shadow: 0 -1vh 0 mediumpurple;
+  }
+
+  to {
+    text-shadow: 0 -1vh 0 darkviolet;
+  }
+}
+
+:focus-within {
+  box-shadow: 0 0 0 2vw deepskyblue;
+}
+
+:focus {
+  box-shadow: 0 0 0 10vmax deepskyblue;
+  outline: 1ch groove skyblue;
+}
